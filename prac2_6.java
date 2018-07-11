@@ -1,54 +1,57 @@
 import java.util.*;
 
-class prac2_
+class prac2_6
 {
-    public static void main(String a[])
+    public static void main(String c[])
     {
         Scanner b=new Scanner(System.in);
-        String s,s1;
+        String s;
         System.out.println("Enter a line:");
         s=b.nextLine();
         int n=s.length();
-        int a,e,i,o,u,t;
-        while(s.compareTO("quit")==s1)
+        int a=0,e=0,i=0,o=0,u=0,t=0,j;
+        while(s.compareTo("quit")!=0)
         {
-			for(int i=0;i<n;i++)
+			n=s.length();
+			a=0;e=0;i=0;o=0;u=0;t=0;
+			for(j=0;j<n;j++)
 			{
-				if(s.charAt(i)=='a' || s.charAt(i)=='A')
+				if(s.charAt(j)=='a' || s.charAt(j)=='A')
 				{
 					a++;
 					t++;
 				}
-				if(s.charAt(i)=='e' || s.charAt(i)=='E')
+				if(s.charAt(j)=='e' || s.charAt(j)=='E')
 				{
 					e++;
 					t++;
 				}
-				if(s.charAt(i)=='i' || s.charAt(i)=='I')
+				if(s.charAt(j)=='i' || s.charAt(j)=='I')
 				{
 					i++;
 					t++;
 				}
-				if(s.charAt(i)=='o' || s.charAt(i)=='O')
+				if(s.charAt(j)=='o' || s.charAt(j)=='O')
 				{
 					o++;
 					t++;
 				}
-				if(s.charAt(i)=='u' || s.charAt(i)=='U')
+				if(s.charAt(j)=='u' || s.charAt(j)=='U')
 				{
 					u++;
 					t++;
 				}
 			}
-		System.out.println("Enter a quit to quit:");
-        s1=b.nextLine();
-		}
 		System.out.println("total="+t);
 		System.out.println("a="+a);
 		System.out.println("e="+e);
 		System.out.println("i="+i);
 		System.out.println("o="+o);
 		System.out.println("u="+u);
+		System.out.println("Enter a String or enter 'quit' to exit:");
+        s=b.nextLine();
+		}
+		
     }
 }
 
